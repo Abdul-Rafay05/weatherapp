@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- font awesame cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- link bootstrap -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <h1 class="mainheading">Weather Application</h1>
+    <div class="con-container">
+        <div class="centerbox">
+            <div class="search_field">
+                <input type="text" placeholder="Enter Country Name" id="Input-field" class="Input-field" spellcheck="false">
+                <button id="Btn-search" class="Btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="errormsg">
+                <p class="spinner"></p>
+                <p class="msg">Invalid City Name</p>
+            </div>
+            <div class="weather" id="weather">
+                <img src="./rain.png" alt="Weather-icon" class="Weather-icon" id="Weather-icon">
+                <h1 class="temp">0°C</h1>
+                <h2 class="cityname">City Name</h2>
+                <div class="details">
+                    <div class="col-1">
+                        <img src="./humidity.png" alt="humidity">
+                        <div>
+                            <p class="humidity">0%</p>
+                            <p>humidity</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <img src="./wind.png" alt="humidity">
+                        <div>
+                            <p class="wind">0 km/h</p>
+                            <p>wind speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
